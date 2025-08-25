@@ -1,0 +1,1555 @@
+{
+  "House": [
+    {
+      "id": "Ground_0_2025-03-12",
+      "date": "2025-03-12",
+      "product_service": "Labour",
+      "amount": 1000.0,
+      "note": "JCB",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_1_2025-03-12",
+      "date": "2025-03-12",
+      "product_service": "Labour",
+      "amount": 300.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_2_2025-03-12",
+      "date": "2025-03-12",
+      "product_service": "Loan",
+      "amount": 5900.0,
+      "note": "Processing fee",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_3_2025-03-12",
+      "date": "2025-03-12",
+      "product_service": "Tools & Material",
+      "amount": 165.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_4_2025-03-13",
+      "date": "2025-03-13",
+      "product_service": "Loan",
+      "amount": 1000.0,
+      "note": "Site inspection",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_5_2025-03-13",
+      "date": "2025-03-13",
+      "product_service": "Bescom",
+      "amount": 18000.0,
+      "note": "Temp meter",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_6_2025-03-13",
+      "date": "2025-03-13",
+      "product_service": "Loan",
+      "amount": 20000.0,
+      "note": "lancha",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_7_2025-03-13",
+      "date": "2025-03-13",
+      "product_service": "Tools & Material",
+      "amount": 1600.0,
+      "note": "Motor",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_8_2025-03-13",
+      "date": "2025-03-13",
+      "product_service": "Water Tank",
+      "amount": 1200.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_9_2025-03-13",
+      "date": "2025-03-13",
+      "product_service": "Labour",
+      "amount": 400.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_10_2025-03-15",
+      "date": "2025-03-15",
+      "product_service": "Aggregate",
+      "amount": 16000.0,
+      "note": "40mm 2 truck",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_11_2025-03-15",
+      "date": "2025-03-15",
+      "product_service": "Sand",
+      "amount": 11000.0,
+      "note": "1 truck",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_12_2025-03-15",
+      "date": "2025-03-15",
+      "product_service": "Bricks",
+      "amount": 20000.0,
+      "note": "500",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_13_2025-03-15",
+      "date": "2025-03-15",
+      "product_service": "Mestri",
+      "amount": 50000.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_14_2025-03-15",
+      "date": "2025-03-15",
+      "product_service": "Labour",
+      "amount": 1600.0,
+      "note": "Mestri",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_15_2025-03-15",
+      "date": "2025-03-15",
+      "product_service": "Water Tank",
+      "amount": 1200.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_16_2025-03-17",
+      "date": "2025-03-17",
+      "product_service": "Loan",
+      "amount": 7494.0,
+      "note": "Fee",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_17_2025-03-18",
+      "date": "2025-03-18",
+      "product_service": "Paya",
+      "amount": 25000.0,
+      "note": "JCB advance",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_18_2025-03-18",
+      "date": "2025-03-18",
+      "product_service": "Loan",
+      "amount": 11000.0,
+      "note": "Stamp duty",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_19_2025-03-18",
+      "date": "2025-03-18",
+      "product_service": "Labour",
+      "amount": 700.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_20_2025-03-19",
+      "date": "2025-03-19",
+      "product_service": "Water Tank",
+      "amount": 600.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_21_2025-03-19",
+      "date": "2025-03-19",
+      "product_service": "Labour",
+      "amount": 700.0,
+      "note": "Lunch",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_22_2025-03-19",
+      "date": "2025-03-19",
+      "product_service": "Labour",
+      "amount": 600.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_23_2025-03-19",
+      "date": "2025-03-19",
+      "product_service": "Labour",
+      "amount": 500.0,
+      "note": "Mestri",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_24_2025-03-19",
+      "date": "2025-03-19",
+      "product_service": "Tools & Material",
+      "amount": 150.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_25_2025-03-21",
+      "date": "2025-03-21",
+      "product_service": "Bescom",
+      "amount": 4200.0,
+      "note": "Temp Meter Labour",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_26_2025-03-21",
+      "date": "2025-03-21",
+      "product_service": "Water Tank",
+      "amount": 600.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_27_2025-03-21",
+      "date": "2025-03-21",
+      "product_service": "Bescom",
+      "amount": 200.0,
+      "note": "labour",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_28_2025-03-21",
+      "date": "2025-03-21",
+      "product_service": "Tools & Material",
+      "amount": 690.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_29_2025-03-21",
+      "date": "2025-03-21",
+      "product_service": "Tools & Material",
+      "amount": 750.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_30_2025-03-22",
+      "date": "2025-03-22",
+      "product_service": "Aggregate",
+      "amount": 24000.0,
+      "note": "20mm 3 truck",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_31_2025-03-22",
+      "date": "2025-03-22",
+      "product_service": "Sand",
+      "amount": 29000.0,
+      "note": "1 truck 1 6 wheel",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_32_2025-03-22",
+      "date": "2025-03-22",
+      "product_service": "Mestri",
+      "amount": 20000.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_33_2025-03-22",
+      "date": "2025-03-22",
+      "product_service": "Tools & Material",
+      "amount": 1700.0,
+      "note": "Material (Sump mesh)",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_34_2025-03-24",
+      "date": "2025-03-24",
+      "product_service": "Water Tank",
+      "amount": 1800.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_35_2025-03-24",
+      "date": "2025-03-24",
+      "product_service": "Labour",
+      "amount": 340.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_36_2025-03-25",
+      "date": "2025-03-25",
+      "product_service": "Steel",
+      "amount": 158760.0,
+      "note": "2.6 ton + binding",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_37_2025-03-25",
+      "date": "2025-03-25",
+      "product_service": "Cement",
+      "amount": 11400.0,
+      "note": "30 bags",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_38_2025-03-26",
+      "date": "2025-03-26",
+      "product_service": "Loan",
+      "amount": 27450.0,
+      "note": "MODT",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_39_2025-03-27",
+      "date": "2025-03-27",
+      "product_service": "Stone",
+      "amount": 11000.0,
+      "note": "Paya",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_40_2025-03-27",
+      "date": "2025-03-27",
+      "product_service": "Loan",
+      "amount": 6000.0,
+      "note": "MODT fees",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_41_2025-03-27",
+      "date": "2025-03-27",
+      "product_service": "Loan",
+      "amount": 15000.0,
+      "note": "Paper publication",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_42_2025-03-28",
+      "date": "2025-03-28",
+      "product_service": "Cement",
+      "amount": 49400.0,
+      "note": "130",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_43_2025-03-29",
+      "date": "2025-03-29",
+      "product_service": "Mestri",
+      "amount": 10000.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_44_2025-03-29",
+      "date": "2025-03-29",
+      "product_service": "Paya",
+      "amount": 8000.0,
+      "note": "Paya digging",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_45_2025-03-29",
+      "date": "2025-03-29",
+      "product_service": "Tools & Material",
+      "amount": 3000.0,
+      "note": "Stool",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_46_2025-03-29",
+      "date": "2025-03-29",
+      "product_service": "Doors and Windows",
+      "amount": 14000.0,
+      "note": "Door Vascal",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_47_2025-04-05",
+      "date": "2025-04-05",
+      "product_service": "Water Tank",
+      "amount": 600.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_48_2025-04-05",
+      "date": "2025-04-05",
+      "product_service": "Labour",
+      "amount": 1600.0,
+      "note": "Plinth beam",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_49_2025-04-05",
+      "date": "2025-04-05",
+      "product_service": "Labour",
+      "amount": 1700.0,
+      "note": "Lunch",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_50_2025-04-05",
+      "date": "2025-04-05",
+      "product_service": "Tools & Material",
+      "amount": 1400.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_51_2025-04-07",
+      "date": "2025-04-07",
+      "product_service": "Mestri",
+      "amount": 50000.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_52_2025-04-07",
+      "date": "2025-04-07",
+      "product_service": "Labour",
+      "amount": 150.0,
+      "note": "Lunch",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_53_2025-04-07",
+      "date": "2025-04-07",
+      "product_service": "Plumbing",
+      "amount": 3600.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_54_2025-04-07",
+      "date": "2025-04-07",
+      "product_service": "Water Tank",
+      "amount": 1200.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_55_2025-04-10",
+      "date": "2025-04-10",
+      "product_service": "Paya",
+      "amount": 21000.0,
+      "note": "JCB",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_56_2025-04-10",
+      "date": "2025-04-10",
+      "product_service": "Misc",
+      "amount": 1000.0,
+      "note": "Dog resque",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_57_2025-04-10",
+      "date": "2025-04-10",
+      "product_service": "Labour",
+      "amount": 500.0,
+      "note": "JCB",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_58_2025-04-12",
+      "date": "2025-04-12",
+      "product_service": "Aggregate",
+      "amount": 8000.0,
+      "note": "20mm 1 truck",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_59_2025-04-12",
+      "date": "2025-04-12",
+      "product_service": "Sand",
+      "amount": 19000.0,
+      "note": "6 wheel",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_60_2025-04-12",
+      "date": "2025-04-12",
+      "product_service": "Water Tank",
+      "amount": 1800.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_61_2025-04-14",
+      "date": "2025-04-14",
+      "product_service": "Elevation plan",
+      "amount": 2500.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_62_2025-04-15",
+      "date": "2025-04-15",
+      "product_service": "Paya",
+      "amount": 6000.0,
+      "note": "Mud leveling",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_63_2025-04-16",
+      "date": "2025-04-16",
+      "product_service": "Steel",
+      "amount": 34593.0,
+      "note": "550kg",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_64_2025-04-16",
+      "date": "2025-04-16",
+      "product_service": "Cement",
+      "amount": 19750.0,
+      "note": "50 bags",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_65_2025-04-19",
+      "date": "2025-04-19",
+      "product_service": "Bricks",
+      "amount": 21250.0,
+      "note": "400(6') + 150 (4')",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_66_2025-04-19",
+      "date": "2025-04-19",
+      "product_service": "Aggregate",
+      "amount": 16000.0,
+      "note": "20mm & 40mm x 1 unit",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_67_2025-04-19",
+      "date": "2025-04-19",
+      "product_service": "Mestri",
+      "amount": 15000.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_68_2025-04-19",
+      "date": "2025-04-19",
+      "product_service": "Water Tank",
+      "amount": 1200.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_69_2025-04-22",
+      "date": "2025-04-22",
+      "product_service": "Bricks",
+      "amount": 21500.0,
+      "note": "6\" 450 + 100 4\"",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_70_2025-04-22",
+      "date": "2025-04-22",
+      "product_service": "Doors and Windows",
+      "amount": 8203.0,
+      "note": "Grill Steel",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_71_2025-04-25",
+      "date": "2025-04-25",
+      "product_service": "Doors and Windows",
+      "amount": 2280.0,
+      "note": "Grill Labor",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_72_2025-04-25",
+      "date": "2025-04-25",
+      "product_service": "Tools & Material",
+      "amount": 1400.0,
+      "note": "Hose pipe",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_73_2025-04-26",
+      "date": "2025-04-26",
+      "product_service": "Tools & Material",
+      "amount": 10000.0,
+      "note": "Water pump motor",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_74_2025-04-26",
+      "date": "2025-04-26",
+      "product_service": "Mestri",
+      "amount": 15000.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_75_2025-05-05",
+      "date": "2025-05-05",
+      "product_service": "Mestri",
+      "amount": 15000.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_76_2025-05-05",
+      "date": "2025-05-05",
+      "product_service": "Cement",
+      "amount": 24600.0,
+      "note": "60 bags",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_77_2025-05-07",
+      "date": "2025-05-07",
+      "product_service": "Mestri",
+      "amount": 50000.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_78_2025-05-09",
+      "date": "2025-05-09",
+      "product_service": "Electrical",
+      "amount": 5869.0,
+      "note": "Material",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_79_2025-05-10",
+      "date": "2025-05-10",
+      "product_service": "Water Tank",
+      "amount": 1800.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_80_2025-05-10",
+      "date": "2025-05-10",
+      "product_service": "Tools & Material",
+      "amount": 4300.0,
+      "note": "Hasir bedding",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_81_2025-05-10",
+      "date": "2025-05-10",
+      "product_service": "Steel",
+      "amount": 110000.0,
+      "note": "61.5 per kg",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_82_2025-05-10",
+      "date": "2025-05-10",
+      "product_service": "Mestri",
+      "amount": 20000.0,
+      "note": "Centering",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_83_2025-05-10",
+      "date": "2025-05-10",
+      "product_service": "Mestri",
+      "amount": 15000.0,
+      "note": "Steel worker",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_84_2025-05-10",
+      "date": "2025-05-10",
+      "product_service": "Labour",
+      "amount": 2500.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_85_2025-05-10",
+      "date": "2025-05-10",
+      "product_service": "Mestri",
+      "amount": 35000.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_86_2025-05-10",
+      "date": "2025-05-10",
+      "product_service": "Labour",
+      "amount": 6000.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_87_2025-05-10",
+      "date": "2025-05-10",
+      "product_service": "Electrical",
+      "amount": 5000.0,
+      "note": "Work",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_88_2025-05-10",
+      "date": "2025-05-10",
+      "product_service": "Sand",
+      "amount": 19000.0,
+      "note": "6 wheeler",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_89_2025-05-10",
+      "date": "2025-05-10",
+      "product_service": "Aggregate",
+      "amount": 15000.0,
+      "note": "20mm 6 wheeler",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_90_2025-05-10",
+      "date": "2025-05-10",
+      "product_service": "Cement",
+      "amount": 38700.0,
+      "note": "90 bags",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_91_2025-05-10",
+      "date": "2025-05-10",
+      "product_service": "Labour",
+      "amount": 2500.0,
+      "note": "Lunch",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_92_2025-05-10",
+      "date": "2025-05-10",
+      "product_service": "Miscellaneous",
+      "amount": 2000.0,
+      "note": "Tools, transport, etc",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "First_0_2025-05-14",
+      "date": "2025-05-14",
+      "product_service": "Doors and Windows",
+      "amount": 20000.0,
+      "note": "Door vascal advance",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_1_2025-05-19",
+      "date": "2025-05-19",
+      "product_service": "Steel",
+      "amount": 23500.0,
+      "note": "385kg",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_2_2025-05-21",
+      "date": "2025-05-21",
+      "product_service": "Mestri",
+      "amount": 5000.0,
+      "note": "Steel work",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_3_2025-05-24",
+      "date": "2025-05-24",
+      "product_service": "Water Tank",
+      "amount": 600.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_4_2025-05-26",
+      "date": "2025-05-26",
+      "product_service": "Doors and Windows",
+      "amount": 6250.0,
+      "note": "Grill Steel",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_5_2025-05-26",
+      "date": "2025-05-26",
+      "product_service": "Doors and Windows",
+      "amount": 3300.0,
+      "note": "Grill Labor",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_6_2025-05-28",
+      "date": "2025-05-28",
+      "product_service": "Bricks",
+      "amount": 21500.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_7_2025-05-28",
+      "date": "2025-05-28",
+      "product_service": "Tools & Material",
+      "amount": 2000.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_8_2025-05-28",
+      "date": "2025-05-28",
+      "product_service": "Cement",
+      "amount": 12600.0,
+      "note": "30 bag",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_9_2025-05-29",
+      "date": "2025-05-29",
+      "product_service": "Plumbing",
+      "amount": 1600.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_10_2025-05-29",
+      "date": "2025-05-29",
+      "product_service": "Water Tank",
+      "amount": 1200.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_11_2025-05-29",
+      "date": "2025-05-29",
+      "product_service": "Bricks",
+      "amount": 20000.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_12_2025-05-29",
+      "date": "2025-05-29",
+      "product_service": "Interior",
+      "amount": 12000.0,
+      "note": "Door and vascal",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_13_2025-05-31",
+      "date": "2025-05-31",
+      "product_service": "Mestri",
+      "amount": 30000.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_14_2025-05-31",
+      "date": "2025-05-31",
+      "product_service": "Sand",
+      "amount": 19000.0,
+      "note": "6 wheel",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_15_2025-06-02",
+      "date": "2025-06-02",
+      "product_service": "Doors and Windows",
+      "amount": 2900.0,
+      "note": "Grill Steel",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_16_2025-06-02",
+      "date": "2025-06-02",
+      "product_service": "Doors and Windows",
+      "amount": 1500.0,
+      "note": "Grill Labour",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_17_2025-06-02",
+      "date": "2025-06-02",
+      "product_service": "Water Tank",
+      "amount": 1200.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_18_2025-06-07",
+      "date": "2025-06-07",
+      "product_service": "Labour",
+      "amount": 1200.0,
+      "note": "Lunch",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_19_2025-06-07",
+      "date": "2025-06-07",
+      "product_service": "Cement",
+      "amount": 21000.0,
+      "note": "50 bags",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_20_2025-06-07",
+      "date": "2025-06-07",
+      "product_service": "Bricks",
+      "amount": 20000.0,
+      "note": "500 bricks",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_21_2025-06-07",
+      "date": "2025-06-07",
+      "product_service": "Mestri",
+      "amount": 20000.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_22_2025-06-11",
+      "date": "2025-06-11",
+      "product_service": "Steel",
+      "amount": 23500.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_23_2025-06-12",
+      "date": "2025-06-12",
+      "product_service": "Tools & Material",
+      "amount": 4300.0,
+      "note": "Hasir",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_24_2025-06-12",
+      "date": "2025-06-12",
+      "product_service": "Electrical",
+      "amount": 6400.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_25_2025-06-12",
+      "date": "2025-06-12",
+      "product_service": "Tools & Material",
+      "amount": 1400.0,
+      "note": "Hooks",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_26_2025-06-12",
+      "date": "2025-06-12",
+      "product_service": "Doors and Windows",
+      "amount": 1100.0,
+      "note": "Door frame covering",
+      "original_floor": "First"
+    },
+    {
+      "id": "Ground_93_2025-06-13",
+      "date": "2025-06-13",
+      "product_service": "Electrical",
+      "amount": 4300.0,
+      "note": "Rent house mateiral",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_94_2025-06-13",
+      "date": "2025-06-13",
+      "product_service": "Electrical",
+      "amount": 9000.0,
+      "note": "work",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_95_2025-06-13",
+      "date": "2025-06-13",
+      "product_service": "Doors and Windows",
+      "amount": 1080.0,
+      "note": "Plywood cover",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "First_27_2025-06-13",
+      "date": "2025-06-13",
+      "product_service": "Water Tank",
+      "amount": 1200.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_28_2025-06-13",
+      "date": "2025-06-13",
+      "product_service": "Labour",
+      "amount": 4000.0,
+      "note": "Work",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_29_2025-06-13",
+      "date": "2025-06-13",
+      "product_service": "Labour",
+      "amount": 2000.0,
+      "note": "Lunch",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_30_2025-06-13",
+      "date": "2025-06-13",
+      "product_service": "Mestri",
+      "amount": 110000.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_31_2025-06-13",
+      "date": "2025-06-13",
+      "product_service": "Sand",
+      "amount": 19000.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_32_2025-06-13",
+      "date": "2025-06-13",
+      "product_service": "Aggregate",
+      "amount": 15000.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_33_2025-06-24",
+      "date": "2025-06-24",
+      "product_service": "Steel",
+      "amount": 123000.0,
+      "note": "",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_34_2025-06-24",
+      "date": "2025-06-24",
+      "product_service": "Cement",
+      "amount": 33500.0,
+      "note": "@420",
+      "original_floor": "First"
+    },
+    {
+      "id": "Second_0_2025-06-24",
+      "date": "2025-06-24",
+      "product_service": "Cement",
+      "amount": 16500.0,
+      "note": "@415",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_1_2025-06-24",
+      "date": "2025-06-24",
+      "product_service": "Water Tank",
+      "amount": 1200.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_2_2025-06-24",
+      "date": "2025-06-24",
+      "product_service": "Labour",
+      "amount": 1200.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_3_2025-06-24",
+      "date": "2025-06-24",
+      "product_service": "Tools & Material",
+      "amount": 2500.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_4_2025-06-24",
+      "date": "2025-06-24",
+      "product_service": "Bricks",
+      "amount": 21500.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_5_2025-06-25",
+      "date": "2025-06-25",
+      "product_service": "Steel",
+      "amount": 4515.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_6_2025-06-25",
+      "date": "2025-06-25",
+      "product_service": "Doors and Windows",
+      "amount": 2000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_7_2025-06-25",
+      "date": "2025-06-25",
+      "product_service": "Aggregate",
+      "amount": 8000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_8_2025-07-01",
+      "date": "2025-07-01",
+      "product_service": "Bricks",
+      "amount": 20000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_9_2025-07-01",
+      "date": "2025-07-01",
+      "product_service": "Mestri",
+      "amount": 30000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_10_2025-07-01",
+      "date": "2025-07-01",
+      "product_service": "Doors and Windows",
+      "amount": 27000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_11_2025-07-01",
+      "date": "2025-07-01",
+      "product_service": "Bricks",
+      "amount": 20000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_12_2025-07-01",
+      "date": "2025-07-01",
+      "product_service": "Mestri",
+      "amount": 25000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_13_2025-07-08",
+      "date": "2025-07-08",
+      "product_service": "Hasir",
+      "amount": 4400.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_14_2025-07-08",
+      "date": "2025-07-08",
+      "product_service": "Water Tank",
+      "amount": 1800.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_15_2025-07-10",
+      "date": "2025-07-10",
+      "product_service": "Electrical",
+      "amount": 4500.0,
+      "note": "material",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_16_2025-07-10",
+      "date": "2025-07-10",
+      "product_service": "Electrical",
+      "amount": 5000.0,
+      "note": "labor",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_17_2025-07-12",
+      "date": "2025-07-12",
+      "product_service": "Mestri",
+      "amount": 110000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_18_2025-07-12",
+      "date": "2025-07-12",
+      "product_service": "Sand",
+      "amount": 19000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_19_2025-07-12",
+      "date": "2025-07-12",
+      "product_service": "Aggregate",
+      "amount": 15000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Ground_96_2025-07-15",
+      "date": "2025-07-15",
+      "product_service": "Plumbing",
+      "amount": 6800.0,
+      "note": "chamber",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Second_20_2025-07-15",
+      "date": "2025-07-15",
+      "product_service": "Steel",
+      "amount": 98500.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_21_2025-07-15",
+      "date": "2025-07-15",
+      "product_service": "Cement",
+      "amount": 37000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_22_2025-07-16",
+      "date": "2025-07-16",
+      "product_service": "Mestri",
+      "amount": 5000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_23_2025-07-16",
+      "date": "2025-07-16",
+      "product_service": "Plumbing",
+      "amount": 2500.0,
+      "note": "labor",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_24_2025-07-16",
+      "date": "2025-07-16",
+      "product_service": "Plumbing",
+      "amount": 1500.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_25_2025-07-16",
+      "date": "2025-07-16",
+      "product_service": "Doors and Windows",
+      "amount": 5000.0,
+      "note": "steel grill",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_26_2025-07-26",
+      "date": "2025-07-26",
+      "product_service": "Bricks",
+      "amount": 23000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_27_2025-07-26",
+      "date": "2025-07-26",
+      "product_service": "Mestri",
+      "amount": 27000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_28_2025-07-28",
+      "date": "2025-07-28",
+      "product_service": "Bricks",
+      "amount": 22750.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_29_2025-07-28",
+      "date": "2025-07-28",
+      "product_service": "Doors and Windows",
+      "amount": 11000.0,
+      "note": "Vascal terrace",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_30_2025-08-02",
+      "date": "2025-08-02",
+      "product_service": "Sand",
+      "amount": 9000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_31_2025-08-02",
+      "date": "2025-08-02",
+      "product_service": "Aggregate",
+      "amount": 8000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_32_2025-08-02",
+      "date": "2025-08-02",
+      "product_service": "Mestri",
+      "amount": 23000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_33_2025-08-02",
+      "date": "2025-08-02",
+      "product_service": "Hasir",
+      "amount": 2700.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_34_2025-08-04",
+      "date": "2025-08-04",
+      "product_service": "Cement",
+      "amount": 60500.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_35_2025-08-09",
+      "date": "2025-08-09",
+      "product_service": "Water Tank",
+      "amount": 2400.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_36_2025-08-09",
+      "date": "2025-08-09",
+      "product_service": "Mestri",
+      "amount": 75000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_37_2025-08-11",
+      "date": "2025-08-11",
+      "product_service": "Tools & Material",
+      "amount": 1000.0,
+      "note": "plastering",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_38_2025-08-11",
+      "date": "2025-08-11",
+      "product_service": "Mestri",
+      "amount": 4000.0,
+      "note": "plastering",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_39_2025-08-11",
+      "date": "2025-08-11",
+      "product_service": "Electrical",
+      "amount": 800.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_40_2025-08-11",
+      "date": "2025-08-11",
+      "product_service": "Electrical",
+      "amount": 5000.0,
+      "note": "Work",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_41_2025-08-11",
+      "date": "2025-08-11",
+      "product_service": "Mestri",
+      "amount": 5000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_42_2025-08-11",
+      "date": "2025-08-11",
+      "product_service": "Doors and Windows",
+      "amount": 1600.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Ground_97_2025-08-13",
+      "date": "2025-08-13",
+      "product_service": "Sand",
+      "amount": 12000.0,
+      "note": "tractor",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Second_43_2025-08-16",
+      "date": "2025-08-16",
+      "product_service": "Mestri",
+      "amount": 10000.0,
+      "note": "Mestri",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_44_2025-08-16",
+      "date": "2025-08-16",
+      "product_service": "Mestri",
+      "amount": 10000.0,
+      "note": "plasteri",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_45_2025-08-16",
+      "date": "2025-08-16",
+      "product_service": "Bricks",
+      "amount": 10200.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Ground_98_2025-08-20",
+      "date": "2025-08-20",
+      "product_service": "Mestri",
+      "amount": 5000.0,
+      "note": "Plasterin",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Ground_99_2025-08-20",
+      "date": "2025-08-20",
+      "product_service": "Mestri",
+      "amount": 20000.0,
+      "note": "survey",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "Second_46_2025-08-20",
+      "date": "2025-08-20",
+      "product_service": "Electrical",
+      "amount": 15000.0,
+      "note": "Material",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_47_2025-08-20",
+      "date": "2025-08-20",
+      "product_service": "Steel",
+      "amount": 45000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Ground_100_2025-08-23",
+      "date": "2025-08-23",
+      "product_service": "Plumbing",
+      "amount": 5000.0,
+      "note": "",
+      "original_floor": "Ground"
+    },
+    {
+      "id": "First_35_2025-08-24",
+      "date": "2025-08-24",
+      "product_service": "Plumbing",
+      "amount": 14300.0,
+      "note": "Material",
+      "original_floor": "First"
+    },
+    {
+      "id": "First_36_2025-08-24",
+      "date": "2025-08-24",
+      "product_service": "Plumbing",
+      "amount": 25000.0,
+      "note": "Material",
+      "original_floor": "First"
+    },
+    {
+      "id": "Second_48_2025-08-24",
+      "date": "2025-08-24",
+      "product_service": "Mestri",
+      "amount": 6000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_49_2025-08-24",
+      "date": "2025-08-24",
+      "product_service": "Mestri",
+      "amount": 30000.0,
+      "note": "plastering",
+      "original_floor": "Second"
+    },
+    {
+      "id": "Second_50_2025-08-24",
+      "date": "2025-08-24",
+      "product_service": "Electrical",
+      "amount": 11000.0,
+      "note": "",
+      "original_floor": "Second"
+    },
+    {
+      "id": "First_37_2025-08-25",
+      "date": "2025-08-25",
+      "product_service": "Mestri",
+      "amount": 1000.0,
+      "note": "Plastering",
+      "original_floor": "First"
+    }
+  ],
+  "summary": {
+    "total_entries": 190,
+    "total_amount": 2853689.0,
+    "categories": [
+      "Aggregate",
+      "Bescom",
+      "Bricks",
+      "Cement",
+      "Doors and Windows",
+      "Electrical",
+      "Elevation plan",
+      "Hasir",
+      "Interior",
+      "Labour",
+      "Loan",
+      "Mestri",
+      "Misc",
+      "Miscellaneous",
+      "Paya",
+      "Plumbing",
+      "Sand",
+      "Steel",
+      "Stone",
+      "Tools & Material",
+      "Water Tank"
+    ],
+    "date_range": {
+      "start": "2025-03-12",
+      "end": "2025-08-25"
+    }
+  }
+}
