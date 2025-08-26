@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House Construction Cost Manager</title>
+    <title>Construction Cost Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,19 +11,17 @@
         <!-- Header -->
         <header class="header">
             <div class="container">
-                <h1>House Construction Cost Manager</h1>
-                <div class="header-stats">
-                    <div class="stat-item">
-                        <div class="stat-value" id="totalProjectCost">₹0</div>
-                        <div class="stat-label">Total Project Cost</div>
+                <div class="header-content">
+                    <div>
+                        <h1>Construction Cost Tracker</h1>
+                        <p class="header-subtitle">Track and manage your construction project expenses</p>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-value" id="totalEntries">0</div>
-                        <div class="stat-label">Total Entries</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value" id="dateRange">-</div>
-                        <div class="stat-label">Date Range</div>
+                    <div class="sync-status">
+                        <div class="sync-indicator" id="syncIndicator">
+                            <span class="sync-dot"></span>
+                            <span class="sync-text">Offline</span>
+                        </div>
+                        <div class="last-sync" id="lastSync">Never synced</div>
                     </div>
                 </div>
             </div>
@@ -32,9 +30,12 @@
         <!-- Navigation -->
         <nav class="nav-tabs">
             <div class="container">
-                <button class="tab-btn active" data-tab="all-entries">All Entries</button>
+                <button class="tab-btn active" data-tab="overview">Overview</button>
+                <button class="tab-btn" data-tab="floor-details">Floor Details</button>
                 <button class="tab-btn" data-tab="add-entry">Add Entry</button>
-                <button class="tab-btn" data-tab="analytics">Analytics</button>
+                <button class="tab-btn" data-tab="category-analysis">Category Analysis</button>
+                <button class="tab-btn" data-tab="change-log">Change Log</button>
+                <button class="tab-btn" data-tab="settings">Settings</button>
             </div>
         </nav>
 
@@ -42,59 +43,85 @@
         <main class="main-content">
             <div class="container">
                 
-                <!-- All Entries Section -->
-                <section id="all-entries" class="tab-content active">
+                <!-- Overview Section -->
+                <section id="overview" class="tab-content active">
+                    <h2>Project Overview</h2>
+                    <div class="overview-cards">
+                        <div class="card total-card">
+                            <div class="card__body">
+                                <h3>Total Project Cost</h3>
+                                <div class="total-amount" id="totalProjectCost">₹0</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__body">
+                                <h3>Ground Floor</h3>
+                                <div class="floor-amount" id="groundFloorTotal">₹0</div>
+                                <div class="floor-entries" id="groundFloorEntries">0 entries</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__body">
+                                <h3>First Floor</h3>
+                                <div class="floor-amount" id="firstFloorTotal">₹0</div>
+                                <div class="floor-entries" id="firstFloorEntries">0 entries</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__body">
+                                <h3>Second Floor</h3>
+                                <div class="floor-amount" id="secondFloorTotal">₹0</div>
+                                <div class="floor-entries" id="secondFloorEntries">0 entries</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Floor Details Section -->
+                <section id="floor-details" class="tab-content">
                     <div class="section-header">
-                        <h2>All Construction Entries</h2>
-                        <div class="table-controls">
-                            <div class="search-container">
-                                <input type="text" id="searchInput" class="form-control search-input" placeholder="Search entries...">
-                            </div>
-                            <div class="filter-container">
-                                <select id="categoryFilter" class="form-control">
-                                    <option value="">All Categories</option>
-                                </select>
-                            </div>
+                        <h2>Floor Details</h2>
+                        <div class="section-actions">
+                            <button class="btn btn--outline btn--sm" id="exportData">Export Data</button>
+                            <button class="btn btn--secondary btn--sm" id="manualSync">Sync Now</button>
                         </div>
                     </div>
                     
-                    <div class="table-container">
-                        <table class="entries-table">
-                            <thead>
-                                <tr>
-                                    <th class="sortable" data-sort="date">Date <span class="sort-icon">↕</span></th>
-                                    <th class="sortable" data-sort="category">Category <span class="sort-icon">↕</span></th>
-                                    <th class="sortable" data-sort="amount">Amount <span class="sort-icon">↕</span></th>
-                                    <th>Notes</th>
-                                    <th class="actions-col">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody id="entriesTableBody">
-                            </tbody>
-                        </table>
+                    <div class="floor-tabs">
+                        <button class="floor-tab-btn active" data-floor="Ground">Ground Floor</button>
+                        <button class="floor-tab-btn" data-floor="First">First Floor</button>
+                        <button class="floor-tab-btn" data-floor="Second">Second Floor</button>
                     </div>
-                    
-                    <div class="table-footer">
-                        <div class="table-summary">
-                            <strong>Total: <span id="filteredTotal">₹0</span> (<span id="filteredCount">0</span> entries)</strong>
+
+                    <div class="floor-content">
+                        <div class="floor-summary">
+                            <h3 id="currentFloorName">Ground Floor</h3>
+                            <div class="floor-total" id="currentFloorTotal">₹0</div>
                         </div>
-                        <div class="pagination" id="pagination">
+                        
+                        <div class="table-container">
+                            <table class="entries-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Category</th>
+                                        <th>Amount</th>
+                                        <th>Notes</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="entriesTableBody">
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </section>
 
                 <!-- Add Entry Section -->
                 <section id="add-entry" class="tab-content">
-                    <div class="section-header">
-                        <h2>Add New Entry</h2>
-                    </div>
+                    <h2>Add New Entry</h2>
                     
                     <div class="form-container">
-                        <div id="successMessage" class="success-message hidden">
-                            <span>✓</span>
-                            <span>Entry added successfully!</span>
-                        </div>
-                        
                         <form id="addEntryForm" class="add-entry-form">
                             <div class="form-row">
                                 <div class="form-group">
@@ -102,8 +129,13 @@
                                     <input type="date" id="entryDate" class="form-control" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="entryAmount" class="form-label">Amount (₹)</label>
-                                    <input type="number" id="entryAmount" class="form-control" min="0" step="0.01" required>
+                                    <label for="entryFloor" class="form-label">Floor</label>
+                                    <select id="entryFloor" class="form-control" required>
+                                        <option value="">Select Floor</option>
+                                        <option value="Ground">Ground Floor</option>
+                                        <option value="First">First Floor</option>
+                                        <option value="Second">Second Floor</option>
+                                    </select>
                                 </div>
                             </div>
                             
@@ -114,10 +146,15 @@
                                         <option value="">Select Category</option>
                                     </select>
                                 </div>
-                                <div class="form-group" id="customCategoryGroup" style="display: none;">
-                                    <label for="customCategory" class="form-label">Custom Category</label>
-                                    <input type="text" id="customCategory" class="form-control" placeholder="Enter custom category">
+                                <div class="form-group">
+                                    <label for="entryAmount" class="form-label">Amount (₹)</label>
+                                    <input type="number" id="entryAmount" class="form-control" min="0" step="0.01" required>
                                 </div>
+                            </div>
+                            
+                            <div class="form-group" id="customCategoryGroup" style="display: none;">
+                                <label for="customCategory" class="form-label">Custom Category</label>
+                                <input type="text" id="customCategory" class="form-control" placeholder="Enter custom category">
                             </div>
                             
                             <div class="form-group">
@@ -125,136 +162,201 @@
                                 <textarea id="entryNotes" class="form-control" rows="3" placeholder="Enter any notes or details"></textarea>
                             </div>
                             
-                            <div class="form-actions">
-                                <button type="button" id="clearForm" class="btn btn--secondary">Clear Form</button>
-                                <button type="submit" class="btn btn--primary">Add Entry</button>
-                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Add Entry</button>
                         </form>
                     </div>
                 </section>
 
-                <!-- Analytics Section -->
-                <section id="analytics" class="tab-content">
-                    <div class="section-header">
-                        <h2>Analytics</h2>
-                    </div>
+                <!-- Category Analysis Section -->
+                <section id="category-analysis" class="tab-content">
+                    <h2>Category Analysis</h2>
                     
-                    <div class="analytics-container">
-                        <div class="analytics-summary">
-                            <div class="summary-cards">
-                                <div class="card">
-                                    <div class="card__body">
-                                        <h3>Top Category</h3>
-                                        <div class="top-category" id="topCategory">-</div>
-                                        <div class="top-category-amount" id="topCategoryAmount">₹0</div>
+                    <div class="analysis-container">
+                        <div class="form-group">
+                            <label for="analysisCategory" class="form-label">Select Category</label>
+                            <select id="analysisCategory" class="form-control">
+                                <option value="">Choose a category to analyze</option>
+                            </select>
+                        </div>
+                        
+                        <div id="analysisResults" class="analysis-results" style="display: none;">
+                            <div class="analysis-summary">
+                                <h3 id="analysisCategoryName"></h3>
+                                <div class="analysis-total" id="analysisTotalAmount">₹0</div>
+                                <div class="analysis-percentage" id="analysisPercentage">0% of total project cost</div>
+                            </div>
+                            
+                            <div class="analysis-breakdown">
+                                <h4>Breakdown by Floor</h4>
+                                <div class="breakdown-cards">
+                                    <div class="card">
+                                        <div class="card__body">
+                                            <h5>Ground Floor</h5>
+                                            <div class="breakdown-amount" id="analysisGroundAmount">₹0</div>
+                                            <div class="breakdown-entries" id="analysisGroundEntries">0 entries</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card__body">
-                                        <h3>Average Entry</h3>
-                                        <div class="average-amount" id="averageAmount">₹0</div>
+                                    <div class="card">
+                                        <div class="card__body">
+                                            <h5>First Floor</h5>
+                                            <div class="breakdown-amount" id="analysisFirstAmount">₹0</div>
+                                            <div class="breakdown-entries" id="analysisFirstEntries">0 entries</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card__body">
-                                        <h3>Most Recent</h3>
-                                        <div class="recent-date" id="recentDate">-</div>
-                                        <div class="recent-amount" id="recentAmount">₹0</div>
+                                    <div class="card">
+                                        <div class="card__body">
+                                            <h5>Second Floor</h5>
+                                            <div class="breakdown-amount" id="analysisSecondAmount">₹0</div>
+                                            <div class="breakdown-entries" id="analysisSecondEntries">0 entries</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="chart-section">
-                            <h3>Category Breakdown</h3>
-                            <div class="chart-container" style="position: relative; height: 400px;">
-                                <canvas id="categoryChart"></canvas>
+                    </div>
+                </section>
+
+                <!-- Change Log Section -->
+                <section id="change-log" class="tab-content">
+                    <h2>Change Log</h2>
+                    
+                    <div class="change-log-container">
+                        <div class="change-log-header">
+                            <div class="form-group">
+                                <label for="logFilter" class="form-label">Filter by Action</label>
+                                <select id="logFilter" class="form-control">
+                                    <option value="">All Actions</option>
+                                    <option value="create">Create</option>
+                                    <option value="update">Update</option>
+                                    <option value="delete">Delete</option>
+                                </select>
                             </div>
                         </div>
-                        
-                        <div class="category-table">
-                            <h3>Category Summary</h3>
-                            <div class="table-container">
-                                <table class="summary-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Category</th>
-                                            <th>Amount</th>
-                                            <th>Entries</th>
-                                            <th>Percentage</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="categorySummaryBody">
-                                    </tbody>
-                                </table>
+
+                        <div class="change-log-list" id="changeLogList">
+                            <div class="empty-state">No changes recorded yet</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Settings Section -->
+                <section id="settings" class="tab-content">
+                    <h2>Settings</h2>
+                    
+                    <div class="settings-container">
+                        <div class="settings-section">
+                            <h3>GitHub Integration</h3>
+                            <div class="form-group">
+                                <label for="githubOwner" class="form-label">Repository Owner</label>
+                                <input type="text" id="githubOwner" class="form-control" placeholder="your-username">
                             </div>
+                            <div class="form-group">
+                                <label for="githubRepo" class="form-label">Repository Name</label>
+                                <input type="text" id="githubRepo" class="form-control" placeholder="construction-cost-tracker">
+                            </div>
+                            <div class="form-group">
+                                <label for="githubToken" class="form-label">Personal Access Token</label>
+                                <input type="password" id="githubToken" class="form-control" placeholder="Enter your GitHub PAT">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">
+                                    <input type="checkbox" id="autoSync"> Auto-sync changes
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="settings-section">
+                            <h3>Security</h3>
+                            <div class="form-group">
+                                <label for="currentPassword" class="form-label">Current Password</label>
+                                <input type="password" id="currentPassword" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="newPassword" class="form-label">New Password</label>
+                                <input type="password" id="newPassword" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword" class="form-label">Confirm New Password</label>
+                                <input type="password" id="confirmPassword" class="form-control">
+                            </div>
+                            <button type="button" class="btn btn--primary" id="changePassword">Change Password</button>
+                        </div>
+
+                        <div class="settings-section">
+                            <h3>Data Management</h3>
+                            <div class="settings-actions">
+                                <input type="file" id="importFile" accept=".json" style="display: none;">
+                                <button type="button" class="btn btn--secondary" id="importData">Import Data</button>
+                                <button type="button" class="btn btn--outline" id="exportAllData">Export All Data</button>
+                                <button type="button" class="btn btn--primary" id="testConnection">Test GitHub Connection</button>
+                            </div>
+                        </div>
+
+                        <div class="settings-footer">
+                            <button type="button" class="btn btn--primary btn--full-width" id="saveSettings">Save Settings</button>
                         </div>
                     </div>
                 </section>
 
             </div>
         </main>
-    </div>
 
-    <!-- Edit Modal -->
-    <div id="editModal" class="modal hidden">
-        <div class="modal-backdrop"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Edit Entry</h3>
-                <button type="button" class="modal-close" id="closeModal">&times;</button>
+        <!-- Password Modal -->
+        <div class="modal hidden" id="passwordModal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Authentication Required</h3>
+                </div>
+                <div class="modal-body">
+                    <p>This action requires authentication. Please enter your password:</p>
+                    <div class="form-group">
+                        <input type="password" id="modalPassword" class="form-control" placeholder="Enter password" autocomplete="current-password">
+                    </div>
+                    <div class="error-message hidden" id="passwordError">Incorrect password. Please try again.</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn--outline" id="cancelAuth">Cancel</button>
+                    <button type="button" class="btn btn--primary" id="confirmAuth">Authenticate</button>
+                </div>
             </div>
-            <div class="modal-body">
-                <form id="editEntryForm">
-                    <input type="hidden" id="editEntryId">
-                    <div class="form-row">
+        </div>
+
+        <!-- Edit Entry Modal -->
+        <div class="modal hidden" id="editModal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Edit Entry</h3>
+                </div>
+                <div class="modal-body">
+                    <form id="editEntryForm">
                         <div class="form-group">
                             <label for="editDate" class="form-label">Date</label>
                             <input type="date" id="editDate" class="form-control" required>
                         </div>
                         <div class="form-group">
+                            <label for="editCategory" class="form-label">Category</label>
+                            <input type="text" id="editCategory" class="form-control" required>
+                        </div>
+                        <div class="form-group">
                             <label for="editAmount" class="form-label">Amount (₹)</label>
                             <input type="number" id="editAmount" class="form-control" min="0" step="0.01" required>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="editCategory" class="form-label">Category</label>
-                        <input type="text" id="editCategory" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="editNotes" class="form-label">Notes</label>
-                        <textarea id="editNotes" class="form-control" rows="3"></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn--secondary" id="cancelEdit">Cancel</button>
-                <button type="button" class="btn btn--primary" id="saveEdit">Save Changes</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Delete Confirmation Modal -->
-    <div id="deleteModal" class="modal hidden">
-        <div class="modal-backdrop"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Delete Entry</h3>
-                <button type="button" class="modal-close" id="closeDeleteModal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <p>Are you sure you want to delete this entry?</p>
-                <div class="delete-entry-details" id="deleteEntryDetails">
+                        <div class="form-group">
+                            <label for="editNotes" class="form-label">Notes</label>
+                            <textarea id="editNotes" class="form-control" rows="2"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn--outline" id="cancelEdit">Cancel</button>
+                    <button type="button" class="btn btn--primary" id="saveEdit">Save Changes</button>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn--secondary" id="cancelDelete">Cancel</button>
-                <button type="button" class="btn btn--primary" id="confirmDelete" style="background-color: var(--color-error);">Delete</button>
-            </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
