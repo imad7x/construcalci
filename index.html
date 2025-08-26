@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Construction Cost Tracker</title>
+    <title>House Construction Cost Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,8 +13,12 @@
             <div class="container">
                 <div class="header-content">
                     <div>
-                        <h1>Construction Cost Tracker</h1>
-                        <p class="header-subtitle">Track and manage your construction project expenses</p>
+                        <h1>House Construction Cost Tracker</h1>
+                        <p class="header-subtitle">Unified project expense management</p>
+                        <div class="project-stats">
+                            <span class="stat-item">Total: <span id="totalProjectCost">₹28,53,689</span></span>
+                            <span class="stat-item">Entries: <span id="totalEntries">190</span></span>
+                        </div>
                     </div>
                     <div class="sync-status">
                         <div class="sync-indicator" id="syncIndicator">
@@ -30,10 +34,9 @@
         <!-- Navigation -->
         <nav class="nav-tabs">
             <div class="container">
-                <button class="tab-btn active" data-tab="overview">Overview</button>
-                <button class="tab-btn" data-tab="floor-details">Floor Details</button>
+                <button class="tab-btn active" data-tab="all-entries">All Entries</button>
                 <button class="tab-btn" data-tab="add-entry">Add Entry</button>
-                <button class="tab-btn" data-tab="category-analysis">Category Analysis</button>
+                <button class="tab-btn" data-tab="analytics">Analytics</button>
                 <button class="tab-btn" data-tab="change-log">Change Log</button>
                 <button class="tab-btn" data-tab="settings">Settings</button>
             </div>
@@ -43,77 +46,66 @@
         <main class="main-content">
             <div class="container">
                 
-                <!-- Overview Section -->
-                <section id="overview" class="tab-content active">
-                    <h2>Project Overview</h2>
-                    <div class="overview-cards">
-                        <div class="card total-card">
-                            <div class="card__body">
-                                <h3>Total Project Cost</h3>
-                                <div class="total-amount" id="totalProjectCost">₹0</div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card__body">
-                                <h3>Ground Floor</h3>
-                                <div class="floor-amount" id="groundFloorTotal">₹0</div>
-                                <div class="floor-entries" id="groundFloorEntries">0 entries</div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card__body">
-                                <h3>First Floor</h3>
-                                <div class="floor-amount" id="firstFloorTotal">₹0</div>
-                                <div class="floor-entries" id="firstFloorEntries">0 entries</div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card__body">
-                                <h3>Second Floor</h3>
-                                <div class="floor-amount" id="secondFloorTotal">₹0</div>
-                                <div class="floor-entries" id="secondFloorEntries">0 entries</div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Floor Details Section -->
-                <section id="floor-details" class="tab-content">
+                <!-- All Entries Section -->
+                <section id="all-entries" class="tab-content active">
                     <div class="section-header">
-                        <h2>Floor Details</h2>
+                        <h2>All Construction Entries</h2>
                         <div class="section-actions">
                             <button class="btn btn--outline btn--sm" id="exportData">Export Data</button>
                             <button class="btn btn--secondary btn--sm" id="manualSync">Sync Now</button>
                         </div>
                     </div>
                     
-                    <div class="floor-tabs">
-                        <button class="floor-tab-btn active" data-floor="Ground">Ground Floor</button>
-                        <button class="floor-tab-btn" data-floor="First">First Floor</button>
-                        <button class="floor-tab-btn" data-floor="Second">Second Floor</button>
+                    <div class="entries-controls">
+                        <div class="search-filter-row">
+                            <div class="form-group">
+                                <input type="text" id="searchEntries" class="form-control" placeholder="Search entries...">
+                            </div>
+                            <div class="form-group">
+                                <select id="filterCategory" class="form-control">
+                                    <option value="">All Categories</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select id="sortEntries" class="form-control">
+                                    <option value="date-desc">Date (Newest First)</option>
+                                    <option value="date-asc">Date (Oldest First)</option>
+                                    <option value="amount-desc">Amount (Highest First)</option>
+                                    <option value="amount-asc">Amount (Lowest First)</option>
+                                    <option value="category">Category (A-Z)</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="floor-content">
-                        <div class="floor-summary">
-                            <h3 id="currentFloorName">Ground Floor</h3>
-                            <div class="floor-total" id="currentFloorTotal">₹0</div>
+                    <div class="entries-summary">
+                        <div class="summary-stats">
+                            <span class="summary-item">Showing: <span id="filteredCount">190</span> entries</span>
+                            <span class="summary-item">Total: <span id="filteredTotal">₹28,53,689</span></span>
                         </div>
-                        
-                        <div class="table-container">
-                            <table class="entries-table">
-                                <thead>
-                                    <tr>
-                                        <th>Date</th>
-                                        <th>Category</th>
-                                        <th>Amount</th>
-                                        <th>Notes</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="entriesTableBody">
-                                </tbody>
-                            </table>
-                        </div>
+                    </div>
+                    
+                    <div class="table-container">
+                        <table class="entries-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Category</th>
+                                    <th>Amount</th>
+                                    <th>Notes</th>
+                                    <th>Original Floor</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="entriesTableBody">
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="pagination" id="pagination" style="display: none;">
+                        <button class="btn btn--outline btn--sm" id="prevPage">Previous</button>
+                        <span class="page-info" id="pageInfo">Page 1 of 1</span>
+                        <button class="btn btn--outline btn--sm" id="nextPage">Next</button>
                     </div>
                 </section>
 
@@ -129,26 +121,26 @@
                                     <input type="date" id="entryDate" class="form-control" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="entryFloor" class="form-label">Floor</label>
-                                    <select id="entryFloor" class="form-control" required>
-                                        <option value="">Select Floor</option>
-                                        <option value="Ground">Ground Floor</option>
-                                        <option value="First">First Floor</option>
-                                        <option value="Second">Second Floor</option>
+                                    <label for="entryCategory" class="form-label">Category</label>
+                                    <select id="entryCategory" class="form-control" required>
+                                        <option value="">Select Category</option>
                                     </select>
                                 </div>
                             </div>
                             
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="entryCategory" class="form-label">Category</label>
-                                    <select id="entryCategory" class="form-control" required>
-                                        <option value="">Select Category</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
                                     <label for="entryAmount" class="form-label">Amount (₹)</label>
                                     <input type="number" id="entryAmount" class="form-control" min="0" step="0.01" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="originalFloor" class="form-label">Original Floor</label>
+                                    <select id="originalFloor" class="form-control" required>
+                                        <option value="">Select Floor</option>
+                                        <option value="Ground">Ground Floor</option>
+                                        <option value="First">First Floor</option>
+                                        <option value="Second">Second Floor</option>
+                                    </select>
                                 </div>
                             </div>
                             
@@ -167,47 +159,75 @@
                     </div>
                 </section>
 
-                <!-- Category Analysis Section -->
-                <section id="category-analysis" class="tab-content">
-                    <h2>Category Analysis</h2>
+                <!-- Analytics Section -->
+                <section id="analytics" class="tab-content">
+                    <h2>Project Analytics</h2>
                     
-                    <div class="analysis-container">
-                        <div class="form-group">
-                            <label for="analysisCategory" class="form-label">Select Category</label>
-                            <select id="analysisCategory" class="form-control">
-                                <option value="">Choose a category to analyze</option>
-                            </select>
+                    <div class="analytics-container">
+                        <div class="analytics-overview">
+                            <div class="analytics-cards">
+                                <div class="card">
+                                    <div class="card__body">
+                                        <h3>Ground Floor</h3>
+                                        <div class="floor-amount" id="groundFloorTotal">₹0</div>
+                                        <div class="floor-entries" id="groundFloorEntries">0 entries</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card__body">
+                                        <h3>First Floor</h3>
+                                        <div class="floor-amount" id="firstFloorTotal">₹0</div>
+                                        <div class="floor-entries" id="firstFloorEntries">0 entries</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card__body">
+                                        <h3>Second Floor</h3>
+                                        <div class="floor-amount" id="secondFloorTotal">₹0</div>
+                                        <div class="floor-entries" id="secondFloorEntries">0 entries</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div id="analysisResults" class="analysis-results" style="display: none;">
-                            <div class="analysis-summary">
-                                <h3 id="analysisCategoryName"></h3>
-                                <div class="analysis-total" id="analysisTotalAmount">₹0</div>
-                                <div class="analysis-percentage" id="analysisPercentage">0% of total project cost</div>
+
+                        <div class="category-analysis">
+                            <div class="form-group">
+                                <label for="analysisCategory" class="form-label">Select Category for Analysis</label>
+                                <select id="analysisCategory" class="form-control">
+                                    <option value="">Choose a category to analyze</option>
+                                </select>
                             </div>
                             
-                            <div class="analysis-breakdown">
-                                <h4>Breakdown by Floor</h4>
-                                <div class="breakdown-cards">
-                                    <div class="card">
-                                        <div class="card__body">
-                                            <h5>Ground Floor</h5>
-                                            <div class="breakdown-amount" id="analysisGroundAmount">₹0</div>
-                                            <div class="breakdown-entries" id="analysisGroundEntries">0 entries</div>
+                            <div id="analysisResults" class="analysis-results" style="display: none;">
+                                <div class="analysis-summary">
+                                    <h3 id="analysisCategoryName"></h3>
+                                    <div class="analysis-total" id="analysisTotalAmount">₹0</div>
+                                    <div class="analysis-percentage" id="analysisPercentage">0% of total project cost</div>
+                                </div>
+                                
+                                <div class="analysis-breakdown">
+                                    <h4>Breakdown by Original Floor</h4>
+                                    <div class="breakdown-cards">
+                                        <div class="card">
+                                            <div class="card__body">
+                                                <h5>Ground Floor</h5>
+                                                <div class="breakdown-amount" id="analysisGroundAmount">₹0</div>
+                                                <div class="breakdown-entries" id="analysisGroundEntries">0 entries</div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card__body">
-                                            <h5>First Floor</h5>
-                                            <div class="breakdown-amount" id="analysisFirstAmount">₹0</div>
-                                            <div class="breakdown-entries" id="analysisFirstEntries">0 entries</div>
+                                        <div class="card">
+                                            <div class="card__body">
+                                                <h5>First Floor</h5>
+                                                <div class="breakdown-amount" id="analysisFirstAmount">₹0</div>
+                                                <div class="breakdown-entries" id="analysisFirstEntries">0 entries</div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card__body">
-                                            <h5>Second Floor</h5>
-                                            <div class="breakdown-amount" id="analysisSecondAmount">₹0</div>
-                                            <div class="breakdown-entries" id="analysisSecondEntries">0 entries</div>
+                                        <div class="card">
+                                            <div class="card__body">
+                                                <h5>Second Floor</h5>
+                                                <div class="breakdown-amount" id="analysisSecondAmount">₹0</div>
+                                                <div class="breakdown-entries" id="analysisSecondEntries">0 entries</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -342,6 +362,14 @@
                         <div class="form-group">
                             <label for="editAmount" class="form-label">Amount (₹)</label>
                             <input type="number" id="editAmount" class="form-control" min="0" step="0.01" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editOriginalFloor" class="form-label">Original Floor</label>
+                            <select id="editOriginalFloor" class="form-control" required>
+                                <option value="Ground">Ground Floor</option>
+                                <option value="First">First Floor</option>
+                                <option value="Second">Second Floor</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="editNotes" class="form-label">Notes</label>
