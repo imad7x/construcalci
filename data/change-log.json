@@ -1,0 +1,69 @@
+{
+  "logs": [
+    {
+      "id": "log_1",
+      "timestamp": "2025-08-26T20:20:00.000Z",
+      "action": "import",
+      "entryId": "house_1",
+      "changes": {
+        "date": "2025-03-12",
+        "product_service": "Labour",
+        "amount": 1000.0,
+        "note": "JCB"
+      },
+      "user": "system"
+    },
+    {
+      "id": "log_2",
+      "timestamp": "2025-08-26T20:20:00.000Z",
+      "action": "import",
+      "entryId": "house_2",
+      "changes": {
+        "date": "2025-03-12",
+        "product_service": "Labour",
+        "amount": 300.0,
+        "note": ""
+      },
+      "user": "system"
+    },
+    {
+      "id": "log_3",
+      "timestamp": "2025-08-26T20:20:00.000Z",
+      "action": "import",
+      "entryId": "house_3",
+      "changes": {
+        "date": "2025-03-12",
+        "product_service": "Loan",
+        "amount": 5900.0,
+        "note": "Processing fee"
+      },
+      "user": "system"
+    },
+    {
+      "id": "log_4",
+      "timestamp": "2025-08-26T20:20:00.000Z",
+      "action": "import",
+      "entryId": "house_4",
+      "changes": {
+        "date": "2025-03-12",
+        "product_service": "Tools & Material",
+        "amount": 165.0,
+        "note": ""
+      },
+      "user": "system"
+    },
+    {
+      "id": "log_5",
+      "timestamp": "2025-08-26T20:20:00.000Z",
+      "action": "import",
+      "entryId": "house_5",
+      "changes": {
+        "date": "2025-03-13",
+        "product_service": "Loan",
+        "amount": 1000.0,
+        "note": "Site inspection"
+      },
+      "user": "system"
+    }
+  ]
+}

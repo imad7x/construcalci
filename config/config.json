@@ -1,0 +1,21 @@
+{
+  "github": {
+    "owner": "your-username",
+    "repo": "construction-cost-tracker",
+    "token": "",
+    "dataFile": "data/construction-data.json",
+    "logFile": "data/change-log.json"
+  },
+  "auth": {
+    "password": "admin123",
+    "sessionTimeout": 3600000
+  },
+  "sync": {
+    "autoSync": true,
+    "syncInterval": 30000
+  },
+  "app": {
+    "version": "2.0.0",
+    "name": "House Construction Cost Manager"
+  }
+}
